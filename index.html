@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up page</title>
+    <link rel="stylesheet" href="./styles/main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+</head>
+
+<body class="bg">
+    <!-- Картка зареєструватись -->
+    <div class=" register_card">
+        <!-- Заголовок -->
+        <div class="header">
+            <h4>Create your accoont</h4>
+        </div>
+        <!-- Імя -->
+        <div class="form-floating mb-3">
+            <input type="text" class="elem index name form-control " placeholder="Example input placeholder">
+            <label for="floatingTextarea">First name</label>
+        </div>
+        <!-- Прізвище -->
+        <div class="form-floating mb-3">
+            <input type="text" class="index last_name form-control" placeholder="Example input placeholder">
+            <label for="floatingTextarea">Last name</label>
+        </div>
+        <!-- Email adres -->
+        <div class="form-floating mb-3 ">
+            <input type="email" class="index email form-control " id="floatingInput1" placeholder="name@example.com">
+            <label for="floatingInput1">Email address</label>
+        </div>
+        <!-- Пароль -->
+        <div class="form-floating mb-3">
+            <input type="password" class="index password form-control" id="floatingPassword1" placeholder="Password">
+            <label for="floatingPassword1">Password</label>
+        </div>
+        <!-- IT напрямок -->
+        <select class="index itDirection form-select mb-3 form-control" aria-label="Default select example">
+            <option value="">Choose the direction of IT...</option>
+            <option value="Frontend">Frontend</option>
+            <option value="Backend">Backend</option>
+            <option value="QC/QA">QC/QA</option>
+        </select>
+        <!-- Стать "чоловік" -->
+        <div style="display: flex;">
+            <div class="form-check mg-r">
+                <input class="male form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"
+                    value="1">
+                <label class="form-check-label" for="flexRadioDefault1">Man</label>
+            </div>
+            <!-- Стать "жінка" -->
+            <div class="form-check ">
+                <input class="female form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"
+                    value="2">
+                <label class="form-check-label mb-3" for="flexRadioDefault2">Woman</label>
+            </div>
+        </div>
+        <!-- Кнопка погодження -->
+        <div class="form-check ">
+            <input class="checkbox form-check-input " type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+                I agree all statements in tems of service
+            </label>
+        </div>
+        <!-- Кнопка зареєструватись -->
+        <button type="button" class="btn_Sign_Up btn btn-primary mb-3">Sign Up</button>
+
+        <!-- Кнопка увійти якшо користувач зареєстрований-->
+        <button type="button" class="btn_Sign_In btn btn-outline-primary">Sign in</button>
+    </div>
+    <!-- Кінець картки зареєструватись -->
+
+    <!-- Картка увійти -->
+    <div class=" login_card">
+        <!-- Заголовок -->
+        <div class="header">
+            <h4>Log in to your account</h4>
+        </div>
+        <!-- Email adres -->
+        <div class="form-floating mb-3 ">
+            <input type="email" class="login_email form-control " id="floatingInput2" placeholder="name@example.com">
+            <label for="floatingInput2">Email address</label>
+        </div>
+        <!-- Пароль -->
+        <div class="form-floating mb-3">
+            <input type="password" class="login_password form-control" id="floatingPassword2" placeholder="Password">
+            <label for="floatingPassword2">Password</label>
+        </div>
+        <div class="message">
+            <p>Incorrect password or email</p>
+        </div>
+        <!-- Кнопка увійти -->
+        <button type="button" class="btn_Sign_out_login btn btn-primary mb-1">Sign out</button>
+    </div>
+    <!-- Кінець картки увійти -->
+
+    <!-- Картка користувач -->
+    <iv class="user_card">
+        <!-- Фото статі -->
+        <div class="imgBox"></div>
+        <!-- Імя та прізвище -->
+        <div class=" nameBox">
+            <h3 class="display_name_and_secondName"></h3>
+        </div>
+        <!-- Емайл -->
+        <div class=" emailBox">
+            <h4 class="display_email"></h4>
+        </div>
+        <!-- IT напрямок -->
+        <div class=" itBox">
+            <h5 class="display_it_direction"></h5>
+        </div>
+        <!-- Кнопка вийти -->
+        <button type="button" onclick="clearAllValues()" class=" btn_Go_out btn btn-light">Go out</button>
+        </div>
+        <!--Кінець картки користувач  -->
+
+        <script src="./js/index.js"></script>
+</body>
+
+</html>

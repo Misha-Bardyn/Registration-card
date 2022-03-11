@@ -1,0 +1,96 @@
+@import url(./font.css);
+*{
+    font-family: 'Vollkorn-Regular';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.bg{
+    background:linear-gradient(to right, #ADA996, #F2F2F2, #DBDBDB,#EAEAEA );
+}
+.register_card {
+    margin: 20px auto;
+    width: 350px;
+    padding: 10px;
+    overflow: hidden;
+}
+.header{
+    text-align: center; 
+    margin-bottom: 20px;
+}
+.btn_Sign_out_login, .btn_Go_out{
+    width: 350px;
+}
+.btn_Sign_In{
+    margin: 0 auto; 
+    font-weight: 500;
+}
+.btn_Sign_Up,  .btn_Sign_out_login, .btn_Go_out {
+    margin: 20px auto;
+    width: 100%;
+
+}
+.btn_Go_out{
+    background:linear-gradient(to right, #6190E8, #A7BFE8 );
+
+}
+.mg-r{
+    margin-right: 20px;
+}
+.login_card {
+    display: none;
+    margin: 20px auto;
+    width: 350px;
+    padding: 10px;
+}
+.user_card {
+    display: none;
+    margin: 20px auto;
+    width: 400px;
+    height: 500px;
+    padding: 20px;
+    box-shadow: 10px 10px 8px 10px #888888;}
+
+.imgBox {
+    margin: 0 auto;
+    width: 220px;
+    height: 200px;
+}
+
+.nameBox {
+    margin: 20px auto;
+    width: 100%;
+    text-align: center;
+    height: 30px;
+}
+
+.emailBox {
+    margin: 20px auto;
+    width: 100%;
+    text-align: center;
+    height: 30px;
+}
+
+.itBox {
+    margin: 20px auto;
+    width: 100%;
+    text-align: center;
+    height: 30px;
+}
+.imageMan{
+    background-image: url(../imges/man.png);
+    background-size: 220px 200px;
+    background-repeat: no-repeat;
+
+}
+.imageWoman{
+    background-image: url(../imges/woman.png);
+    background-size: 200px 200px;
+    background-repeat: no-repeat;
+    opacity: 0.7;
+}
+
+.message{
+    display: none;
+    text-align: center;
+}
